@@ -15,10 +15,10 @@ return new class extends Migration
             $table->id();
 
             $table->foreignId('karyawan_id')->constrained('karyawan')->onDelete('cascade');
-            $table->integer('bulan', 2);
-            $table->integer('tahun', 4);
+            $table->string('bulan', 2);
+            $table->string('tahun', 4);
             $table->date('tanggal_proses');
-            $table->integer('gaji_pokok');
+            $table->string('gaji_pokok');
             $table->integer('potongan');
             $table->integer('tunjangan');
             $table->integer('total_gaji');

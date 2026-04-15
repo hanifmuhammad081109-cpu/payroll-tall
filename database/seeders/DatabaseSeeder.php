@@ -45,14 +45,12 @@ class DatabaseSeeder extends Seeder
 
             //Buat Karyawan
             $karyawan = [
-                ['nik' => 'KRY-001', 'nama' => 'Budi Santoso', 'email' => 'budi@sekolah.com', 'dept' => $it, 'jabatan_id' => $programmer->id, 'gaji' =>100_000_000_000, 'tunj' => 500_000_000],
-                ['nik' => 'KRY-002', 'nama' => 'Siti Aminah', 'email' => 'siti@sekolah.com', 'dept' => $it, 'jabatan_id' => $analyst->id, 'gaji' => 80_000_000_000, 'tunj' => 400_000_000],
-                ['nik' => 'KRY-003', 'nama' => 'Joko Widodo', 'email' => 'joko@sekolah.com', 'dept' => $hrd, 'jabatan_id' => $hrdStaff->id, 'gaji' => 70_000_000_000, 'tunj' => 350_000_000],
-                ['nik' => 'KRY-004', 'nama' => 'Dewi Sartika', 'email' => 'dewi@sekolah.com', 'dept' => $hrd, 'jabatan_id' => $hrdMgr->id, 'gaji' => 90_000_000_000, 'tunj' => 450_000_000],
-                ['nik' => 'KRY-005', 'nama' => 'Andi Setiawan', 'email' => 'andi@sekolah.com', 'dept' => $fin, 'jabatan_id' => $akuntan->id, 'gaji' => 60_000_000_000, 'tunj' => 300_000_000],
-                ['nik' => 'KRY-006', 'nama' => 'Rina Wulandari', 'email' => 'rina@sekolah.com', 'dept' => $fin, 'jabatan_id' => $kasir->id, 'gaji' => 50_000_000_000, 'tunj' => 250_000_000],
-                ['nik' => 'KRY-007', 'nama' => 'Budi Santoso', 'email' => 'budi@sekolah.com', 'dept' => $ops, 'jabatan_id' => $sopir->id, 'gaji' => 40_000_000_000, 'tunj' => 200_000_000],
-                ['nik' => 'KRY-008', 'nama' => 'Siti Aminah', 'email' => 'siti@sekolah.com', 'dept' => $ops, 'jabatan_id' => $gudang->id, 'gaji' => 30_000_000_000, 'tunj' => 150_000_000],
+                ['nik' => 'KRY-001', 'nama' => 'Budi Santoso', 'email' => 'budi@sekolah.com', 'dept' => $it, 'jabatan_id' => $programmer->id, 'gaji' =>100_000_000, 'tunj' => 500_000_000],
+                ['nik' => 'KRY-002', 'nama' => 'Siti Aminah', 'email' => 'siti@sekolah.com', 'dept' => $it, 'jabatan_id' => $analyst->id, 'gaji' => 80_000_000, 'tunj' => 400_000_000],
+                ['nik' => 'KRY-003', 'nama' => 'Joko Widodo', 'email' => 'joko@sekolah.com', 'dept' => $hrd, 'jabatan_id' => $hrdStaff->id, 'gaji' => 70_000_000, 'tunj' => 350_000_000],
+                ['nik' => 'KRY-004', 'nama' => 'Dewi Sartika', 'email' => 'dewi@sekolah.com', 'dept' => $hrd, 'jabatan_id' => $hrdMgr->id, 'gaji' => 90_000_000, 'tunj' => 450_000_000],
+                ['nik' => 'KRY-005', 'nama' => 'Andi Setiawan', 'email' => 'andi@sekolah.com', 'dept' => $fin, 'jabatan_id' => $akuntan->id, 'gaji' => 60_000_000, 'tunj' => 300_000],
+                ['nik' => 'KRY-006', 'nama' => 'Rina Wulandari', 'email' => 'rina@sekolah.com', 'dept' => $fin, 'jabatan_id' => $kasir->id, 'gaji' => 50_000_000, 'tunj' => 250_000],
             ];
 
             foreach ($karyawan as $data) {
