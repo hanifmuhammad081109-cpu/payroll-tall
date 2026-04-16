@@ -1,6 +1,8 @@
 <?php
 
 use App\Livewire\Auth\Login;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware(['guest'])->group(function () {
@@ -9,6 +11,14 @@ Route::middleware(['guest'])->group(function () {
 
 Route::middleware('auth')->group(function () {
     Route::get('/', function () {
-        return "Ini adalah dashboard, nanti akan diganti dengan halaman yang sebenarnya";
+        return view("dashboard");
     })->name('dashboard');
+
+    Route::post('/logout', function (Request $request) {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return redirect()->route('login');
+        
+    })->name('logout');
 });
