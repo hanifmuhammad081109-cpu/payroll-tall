@@ -11,13 +11,13 @@
             </button>
         </div>
 
-        @if (session('message'))
+        @if (session()->has('message'))
             <div class="mb-4 p-3 bg-green-100 border border-green-400 text-green-700 rounded text-sm">
                 {{ session('message') }}
             </div>
         @endif
 
-        @if (session('error'))
+        @if (session()->has('error'))
             <div class="mb-4 p-3 bg-red-100 border border-red-400 text-red-700 rounded text-sm">
                 {{ session('error') }}
             </div>
@@ -98,7 +98,7 @@
                             </div>
                             <div class="mb-2">
                                 <label class="block text-sm font-semibold text-gray-700 mb-1">Nama Departemen</label>
-                                <input type="text"
+                                <input type="text" wire:model="nama"
                                     class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
                                     placeholder="Contoh: Teknologi Informasi">
                             </div>
