@@ -22,13 +22,13 @@ class DepartemenIndex extends Component
     //Property ui
     public $isOpen = false;
     public $search = '';
-
+    
+    //Reset pagination
     public function updatingSearch()
     {
         $this->resetPage();
     }
 
-    //Reset pagination
     public function render()
     {
         $departemens = Departemen::where('nama', 'like', '%' . $this->search . '%')
