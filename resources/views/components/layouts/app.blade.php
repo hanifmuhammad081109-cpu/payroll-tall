@@ -12,6 +12,8 @@
     @livewireStyles
 </head>
 
+
+
 <body class="font-sans antialiased bg-gray-100 text-gray-800 flex h-screen overflow-hidden" x-data="{ sidebarOpen: false }">
 </body>
 
@@ -41,7 +43,7 @@
                 Jabatan
             </a>
 
-            <a href="karyawan.html"
+            <a href="{{ route('karyawan.index') }}"
                 class="flex items-center px-3 py-2 text-sm font-medium rounded-md text-gray-300 hover:bg-gray-800 hover:text-white">
                 Karyawan
             </a>
